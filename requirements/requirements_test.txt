@@ -1,3 +1,4 @@
+# Feel free to adjust these versions
 black==25.1.0
 pytest==8.4.0
-
+ruff==0.12.1

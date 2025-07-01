@@ -25,6 +25,13 @@ conda activate <Project-Name>
 Black is a python package to format you code nicely. It is a must to pass the CI.
 Please follow one of these tutorials to setup black for your IDE.
 
-[Black Formatter for VS Code](https://code.visualstudio.com/docs/python/formatting)
+[VSCode - Black Formatter](https://code.visualstudio.com/docs/python/formatting)
 
-[Black Formatter for Pycharm](https://blog.jetbrains.com/pycharm/2023/07/2023-2-eap-5/)
+[Pycharm - Black Formatter](https://blog.jetbrains.com/pycharm/2023/07/2023-2-eap-5/)
+
+### Ruff Linting
+To automaticcaly run ruff linting install the plugin of your favorite IDE.
+
+[Pycharm - Ruff Plugin](https://plugins.jetbrains.com/plugin/20574-ruff)
+
+[VSCode - Ruff Plugin](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)

@@ -21,16 +21,8 @@ To create the env execute:
 conda env create -f requirements/environment.yml
 conda activate <Project-Name>
 ```
-### Setup Black Formatting
-Black is a python package to format you code nicely. It is a must to pass the CI.
-Please follow one of these tutorials to setup black for your IDE.
-
-[VSCode - Black Formatter](https://code.visualstudio.com/docs/python/formatting)
-
-[Pycharm - Black Formatter](https://blog.jetbrains.com/pycharm/2023/07/2023-2-eap-5/)
-
-### Ruff Linting
-To automaticcaly run ruff linting install the plugin of your favorite IDE.
+### Ruff Linting and formatting
+To automatically run ruff linting install the plugin of your favorite IDE.
 
 [Pycharm - Ruff Plugin](https://plugins.jetbrains.com/plugin/20574-ruff)
 

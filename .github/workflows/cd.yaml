@@ -8,8 +8,6 @@ jobs:
   publish-to-pypi:
     name: Build distribution 📦
     runs-on: ubuntu-latest
-    environment:
-      name: testpypi
     permissions:
       id-token: write
 

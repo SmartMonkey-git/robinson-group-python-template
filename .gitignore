@@ -195,3 +195,5 @@ cython_debug/
 
 .vscode/*
 .idea/*
+
+_version.py

@@ -22,7 +22,7 @@ To automatically run ruff linting install the plugin of your favorite IDE.
 
 ### Continuous Distribution
 You've done it, your package is at a state, where you want other to use it. Luckily, this repository features a CD-Pipeline,
-that will build and upload your packages to Pypi for you. To get the CD running you need to first follow these [instructions](https://docs.pypi.org/trusted-publishers/adding-a-publisher/).
+that will build and upload your packages to Pypi for you. To get the CD running you need to first follow these [instructions](https://docs.pypi.org/trusted-publishers/adding-a-publisher/). Make sure your [pyproject.toml](pyproject.toml) is set up correctly.
 
 Then open your repository page on Github. To the right you should find **Create new Release**. Press it!
 

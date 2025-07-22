@@ -193,7 +193,7 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
-.vscode/*
-.idea/*
+.vscode/
+.idea/
 
 _version.py

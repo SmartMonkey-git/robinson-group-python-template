@@ -15,7 +15,7 @@ conda activate <Project-Name>
 ```
 
 ### Renaming
-As this is a template project, some of the directories and setting have generic names. To ensure the project is set up, that it alines with your intended name please:
+As this is a template project, some of the directories and setting have generic names. To ensure the project is set up, that it aligns with your intended name please:
 
 1. Rename the folder inside of src
 2. Open the pyproject.toml

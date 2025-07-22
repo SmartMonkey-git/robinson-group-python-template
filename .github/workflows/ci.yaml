@@ -35,32 +35,26 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-    -   name: Check out Repo
-        uses: actions/checkout@v4
-        with:
-            fetch-depth: 0
+    - name: Check out Repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
-    -   name: Setup Env
-        uses: ./.github/actions/setup_env
+    - name: Setup Env
+      uses: ./.github/actions/setup_env
 
-    -   name: Ruff Formatting - src
-        run: ruff format --check ./src/
-
-    - name: Ruff Formatting - scripts
-      run:  ruff format --check ./scripts
-
-    - name: Ruff Formatting - tests
-      run:  ruff format --check ./tests
+    - name: Ruff Formatting
+      run: ruff format --check
 
   linting:
     name: Linting
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-    -   name: Check out Repo
-        uses: actions/checkout@v4
-        with:
-            fetch-depth: 0
+    - name: Check out Repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Setup Env
       uses: ./.github/actions/setup_env

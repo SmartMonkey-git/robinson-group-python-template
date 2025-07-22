@@ -4,20 +4,19 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "robinson-group-python-template"
-version = "0.1.0"
 description = "A template for python projects build in the robinson group"
 authors = [{ name = "Rouven Reuter" }]
 requires-python = ">=3.10"
-dynamic = ["dependencies", "optional-dependencies"]
-
-[tool.setuptools]
-packages.find = { where = ["src"] }
+dynamic = ["dependencies", "version"]
 
 [project.urls]
 homepage = "https://github.com/SmartMonkey-git/robinson-group-python-template"
 repository = "https://github.com/SmartMonkey-git/robinson-group-python-template.git"
 documentation = "https://github.com/SmartMonkey-git/robinson-group-python-template"
 bugtracker = "https://github.com/SmartMonkey-git/robinson-group-python-template/issues"
+
+[tool.setuptools]
+packages.find = { where = ["src"] }
 
 [tool.setuptools_scm]
 version_file = "src/project_name/_version.py"

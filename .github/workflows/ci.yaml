@@ -41,9 +41,10 @@ jobs:
         fetch-depth: 0
 
     - name: Setup Env
-      uses: ./.github/actions/setup_ruff
+      uses: ./.github/actions/install_package
       with:
         requirements-path: requirements/requirements_test.txt
+        package: ruff
 
     - name: Ruff Formatting
       run: ruff format --check
@@ -59,9 +60,10 @@ jobs:
         fetch-depth: 0
 
     - name: Setup Env
-      uses: ./.github/actions/setup_ruff
+      uses: ./.github/actions/install_package
       with:
         requirements-path: requirements/requirements_test.txt
+        package: ruff
 
     - name: Ruff Linting
       run: ruff check

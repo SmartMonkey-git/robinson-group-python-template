@@ -4,16 +4,8 @@ description: 'Sets up and caches a python env. Will only install dependencies if
 runs:
     using: composite
     steps:
-        - name: Get project version with yq
-          id: get_python_version
-          uses: mikefarah/yq@v4.46.1
-          with:
-              cmd: yq '.project.requires-python' pyproject.toml
-
-        -   name: Set up Python
-            uses: actions/setup-python@v5.6.0
-            with:
-                python-version: ${{ steps.get_python_version.outputs.result }}
+        - name: Setup Python from pyproject.toml
+          uses: ./.github/actions/python_from_pyproject
 
         -   name: Cache Env
             uses: actions/cache@v4.2.3

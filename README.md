@@ -20,6 +20,7 @@ As this is a template project, some of the directories and setting have generic 
 1. Rename the folder inside of src
 2. Open the pyproject.toml
    - Rename all variables in the sections ``[project]`` and ``[project.urls]``
+3. Depending on your needs, you should change the LICENSE of this repository. Default is MIT.
 
 ### Ruff Linting and Formatting
 Ruff helps to maintain the same code style and prevent the most common bugs in our code base. Keeping the code style uniform simplifies the collaboration - it is much easier to review a pull request without hundreds of whitespace changes.

@@ -18,16 +18,8 @@ jobs:
         persist-credentials: false
         fetch-depth: 0
 
-    - name: Get project version with yq
-      id: get_python_version
-      uses: mikefarah/yq@v4.46.1
-      with:
-        cmd: yq '.project.requires-python' pyproject.toml
-
-    - name: Initialize Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: ${{ steps.get_python_version.outputs.result }}
+    - name: Setup Python from pyproject.toml
+      uses: ./.github/actions/python_from_pyproject
 
     - name: Install build
       run: >-

@@ -52,4 +52,4 @@ Then open your repository page on Github. To the right you should find **Create 
 You will find this page:
 ![img.png](release_page.png)
 
-Create a new Tag for your release, add a title and a description. Press **Publish release**, watch the CD launch in the **Actions Tab** and enjoy your well deserved coffee. ☕
+Create a new Tag for your release, add a title and a description. If you are still unsure what to do check out the [github release how-to](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release). Press **Publish release**, watch the CD launch in the **Actions Tab** and enjoy your well deserved coffee. ☕

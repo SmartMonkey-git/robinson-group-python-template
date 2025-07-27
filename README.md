@@ -14,7 +14,7 @@ conda env create -f requirements/environment.yml
 conda activate <Project-Name>
 ```
 
-### Renaming
+### Basic Setup
 As this is a template project, some of the directories and setting have generic names. To ensure the project is set up, that it aligns with your intended name please:
 
 1. Rename the folder inside of src
@@ -45,7 +45,7 @@ We recommend to run commit the resulting changes before opening a PR, because th
 
 ### Continuous Delivery
 You've done it, your package is at a state, where you want other to use it. Luckily, this repository features a CD-Pipeline,
-that will build and upload your packages to Pypi for you. To get the CD running you need to first follow these [instructions](https://docs.pypi.org/trusted-publishers/adding-a-publisher/). The pipeline uses [OIDC](https://openid.net/developers/how-connect-works/) to authenticate on Pypi. Make sure your [pyproject.toml](pyproject.toml) is set up correctly.
+that will build and upload your packages to Pypi for you. To get the CD running you need to first follow these [instructions](https://docs.pypi.org/trusted-publishers/adding-a-publisher/). The pipeline uses [OIDC](https://openid.net/developers/how-connect-works/) to authenticate on Pypi. Make sure your [pyproject.toml](pyproject.toml) is set up correctly, which means take care of 2. of the section **Basic Setup**.
 
 Then open your repository page on Github. To the right you should find **Create new Release**. Press it!
 

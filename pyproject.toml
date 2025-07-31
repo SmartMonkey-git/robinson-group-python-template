@@ -17,6 +17,12 @@ repository = "https://github.com/SmartMonkey-git/robinson-group-python-template.
 documentation = "https://github.com/SmartMonkey-git/robinson-group-python-template"
 bugtracker = "https://github.com/SmartMonkey-git/robinson-group-python-template/issues"
 
+[project.optional-dependencies]
+test=[]
+
+[tool.setuptools.dynamic.optional-dependencies]
+test = {file = ["requirements/requirements_test.txt"]}
+
 [tool.setuptools]
 packages.find = { where = ["src"] }
 

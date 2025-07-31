@@ -60,6 +60,8 @@ Then you will see something like this:
 
 ![img.png](readme_images/ruff_violation.png)
 
+#### VSCode
+To get ruff automatically running install the following Plugin:
 - [VSCode - Ruff Plugin](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
 
 ### Continuous Delivery

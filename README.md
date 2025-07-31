@@ -1,5 +1,5 @@
 ## How to use this template
-To the top right hand side of this repository, you will find a button labeled <code style="color : green">**Use This Template**</code>. Press it and follow your cravings for new horizons up with another click on **Create a new Repository**. It should copy the contents of the Repository to your account.
+To the top right-hand side of this repository, you will find a button labeled $${\color{green}Use \space this \space Template}$$. Press it and then click on ``Create a new repository``. This will copy the contents of the repository to your account.
 ## Robinson Group Python Template
 This repo serves as a template for python projects in the [Robinson Group](https://robinsongroup.github.io/) of the BIH.
 To get started copy or fork this project and follow the steps below.

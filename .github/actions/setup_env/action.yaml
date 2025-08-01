@@ -12,6 +12,8 @@ runs:
     steps:
         - name: Setup Python from pyproject.toml
           uses: ./.github/actions/python_from_pyproject
+          with:
+              pyproject-file-path: ${{ inputs.pyproject-file-path }}
 
         -   name: Cache Env
             uses: actions/cache@v4.2.3

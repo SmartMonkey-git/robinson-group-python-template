@@ -6,7 +6,7 @@ inputs:
     pyproject-toml-path:
         required: false
         description: Path to the pyporject toml
-        default: ".project.requires-python"
+        default: "./pyproject.toml"
 runs:
     using: composite
     steps:

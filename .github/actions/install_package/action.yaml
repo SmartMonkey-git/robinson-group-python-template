@@ -4,23 +4,14 @@ description: 'Installs a specified Python package from a requirements file, allo
 inputs:
     requirements-path:
         required: true
+        description: Path to the requirements file
     package:
         required: true
+        description: Package you would like to install from the requirements file
 
 runs:
     using: composite
     steps:
-        -   name: Get project version with yq
-            id: get_python_version
-            uses: mikefarah/yq@v4.46.1
-            with:
-                cmd: yq '.project.requires-python' pyproject.toml
-
-        -   name: Set up Python
-            uses: actions/setup-python@v5.6.0
-            with:
-                python-version: ${{ steps.get_python_version.outputs.result }}
-
         -   name: Extract Package Version
             id: extract_package_version
             shell: bash

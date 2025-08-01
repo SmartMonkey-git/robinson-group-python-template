@@ -3,9 +3,9 @@ description: 'Sets up and caches a python env. Will only install dependencies if
 
 
 inputs:
-    pyproject-toml-path:
-        required: false
-        description: Path to the pyporject toml
+    pyproject-file-path:
+        required: False
+        description: "Path to the pyproject.toml including filename"
         default: "./pyproject.toml"
 runs:
     using: composite

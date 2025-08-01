@@ -40,14 +40,12 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Setup Env
-      uses: ./.github/actions/install_package
-      with:
-        requirements-path: requirements/requirements_test.txt
-        package: ruff
-
     - name: Ruff Formatting
-      run: ruff format --check
+      uses: astral-sh/ruff-action@v3.5.0
+      with:
+        version-file: "requirements/requirements_test.txt"
+        args: "format --check"
+
 
   linting:
     name: Linting
@@ -59,11 +57,7 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Setup Env
-      uses: ./.github/actions/install_package
-      with:
-        requirements-path: requirements/requirements_test.txt
-        package: ruff
-
     - name: Ruff Linting
-      run: ruff check
+      uses: astral-sh/ruff-action@v3.5.0
+      with:
+        version-file: "requirements/requirements_test.txt"

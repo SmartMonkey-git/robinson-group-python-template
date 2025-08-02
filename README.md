@@ -64,7 +64,37 @@ Then you will see something like this:
 To get ruff automatically running install the following Plugin:
 - [VSCode - Ruff Plugin](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
 
-### Continuous Delivery
+
+## Testing
+
+A test suite of a typical Python package consists of unit, integration, and documentation tests
+(i.e. the code snippets embedded in the documentation).
+It is important to write tests to ensure that your code works as intended.
+
+This template provides a minimal setup for testing. Tests can be executed by invoking Pytest:
+
+```shell
+pytest
+```
+
+The runner looks for tests in `src` and `tests` folders. On top of that, the Python code
+in the top-level `README.md` file is also executed.
+If `README.md` shows a snippet like this:
+
+```python
+>>> from project_name.foo import foo
+>>> foo()
+True
+
+```
+
+Pytest will execute the snippet to ensure that invoking `foo()` in fact returns `True`.
+
+The snippets in `README.md` can document the typical use cases of the package.
+Since the snippets are executed, any code changes that render the documentation obsolete will be picked up, forcing a documentation update.
+
+
+## Continuous Delivery
 You've done it, your package is at a state, where you want other to use it. Luckily, this repository features a CD-Pipeline,
 that will build and upload your packages to Pypi for you. To get the CD running you need to first follow these [instructions](https://docs.pypi.org/trusted-publishers/adding-a-publisher/). The pipeline uses [OIDC](https://openid.net/developers/how-connect-works/) to authenticate on Pypi. Make sure your [pyproject.toml](pyproject.toml) is set up correctly, which means take care of 2. of the section **Basic Setup**.
 

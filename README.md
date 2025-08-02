@@ -89,8 +89,9 @@ True
 ```
 
 Pytest will execute the snippet to ensure that invoking `foo()` in fact returns `True`.
-This is a way for documenting the typical use cases of the package.
-Since the documentation is executed, any code changes that render the documentation obsolete will be picked up, forcing a documentation update.
+
+The snippets in `README.md` can document the typical use cases of the package.
+Since the snippets are executed, any code changes that render the documentation obsolete will be picked up, forcing a documentation update.
 
 
 ## Continuous Delivery

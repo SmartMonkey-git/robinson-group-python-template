@@ -68,18 +68,18 @@ To get ruff automatically running install the following Plugin:
 ## Testing
 
 A test suite of a typical Python package consists of unit, integration, and documentation tests
-(i.e. the code snippets embedded in the documentation),
-and it is truly important to write the tests to ensure that the code works as intended.
+(i.e. the code snippets embedded in the documentation).
+It is important to write tests to ensure that your code works as intended.
 
-The package template provides a minimal setup and the tests can be executed by invoking the Pytest runner:
+This template provides a minimal setup for testing. Tests can be executed by invoking Pytest:
 
 ```shell
 pytest
 ```
 
 The runner looks for tests in `src` and `tests` folders. On top of that, the Python code
-in the top-level `README.md` file is also executed, so we can demonstrate
-the most imporant functionality:
+in the top-level `README.md` file is also executed.
+If `README.md` shows a snippet like this:
 
 ```python
 >>> from project_name.foo import foo
@@ -88,8 +88,9 @@ True
 
 ```
 
-Since the documentation is executed, any code changes that can render the documentation obsolete can be picked up,
-prompting the documentation update.
+Pytest will execute the snippet to ensure that invoking `foo()` in fact returns `True`.
+This is a way for documenting the typical use cases of the package.
+Since the documentation is executed, any code changes that render the documentation obsolete will be picked up, forcing a documentation update.
 
 
 ## Continuous Delivery

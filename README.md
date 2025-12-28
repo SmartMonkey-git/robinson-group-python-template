@@ -95,8 +95,7 @@ Since the snippets are executed, any code changes that render the documentation 
 
 
 ## Continuous Delivery
-You've done it, your package is at a state, where you want other to use it. Luckily, this repository features a CD-Pipeline,
-that will build and upload your packages to Pypi for you. To get the CD running you need to first follow these [instructions](https://docs.pypi.org/trusted-publishers/adding-a-publisher/). The pipeline uses [OIDC](https://openid.net/developers/how-connect-works/) to authenticate on Pypi. Make sure your [pyproject.toml](pyproject.toml) is set up correctly, which means take care of 2. of the section **Basic Setup**.
+You've done it! Your package has reached a point where you are happy for others to use it. Luckily, this repository features a CD-Pipeline, that will build and upload your packages to Pypi for you. To get the CD running you need to first follow these [instructions](https://docs.pypi.org/trusted-publishers/adding-a-publisher/). The pipeline uses [OIDC](https://openid.net/developers/how-connect-works/) to authenticate on Pypi. Make sure your [pyproject.toml](pyproject.toml) is set up correctly, which means take care of 2. of the section **Basic Setup**.
 
 Then open your repository page on Github. To the right you should find **Create new Release**. Press it!
 
